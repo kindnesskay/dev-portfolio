@@ -5,7 +5,7 @@ interface ITextcard {
 }
 export default function TextCard({ title, body, button_text }: ITextcard) {
   return (
-    <div className="w-full  bg-white rounded-xl p-12 flex flex-col gap-8 items-center h-96 justify-center border border-solid shadow-sm transition-colors hover:transition-colors hover:border-blue-800 hover:shadow-lg">
+    <div className="w-full  bg-white rounded-xl px-4 flex flex-col gap-8 items-center h-96 justify-center border border-solid shadow-sm transition-colors hover:transition-colors hover:border-blue-800 hover:shadow-lg">
       <h1 className="text-5xl font-bold text-primary-color text-center">
         {title}
       </h1>

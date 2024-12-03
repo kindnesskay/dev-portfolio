@@ -7,7 +7,7 @@ export default function NavBar() {
     setIsOpen(!isOpen);
   }
   return (
-    <nav className="w-full flex justify-between items-center  h-24 px-8  bg-none fixed backdrop:blur-sm z-30 backdrop-blur-sm bg-blue-800 text-white">
+    <nav className="w-full flex justify-between items-center  h-20 px-8  bg-none fixed backdrop:blur-sm z-30 backdrop-blur-sm bg-blue-800 text-white">
       <div className={`${isOpen ? "overlay" : "hidden"}`}></div>
       <button className="text-5xl font-bold  z-[4]">Kay</button>
       <div className="h-12 w-12 z-[7]">
