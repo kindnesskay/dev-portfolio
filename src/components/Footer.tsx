@@ -1,9 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-6 items-center  w-full bg-blue-800 text-white min-h-96 px-8 pb-12">
+    <footer className="flex flex-col gap-6 items-center  w-full bg-blue-800 text-white min-h-96 px-4 pb-12">
       <div className="max-w-5xl flex flex-col items-center w-full">
-        <div className="-translate-y-20 p-8 flex justify-between rounded-xl bg-sky-950 w-full items-center min-h-60 max-lg:flex-col max-lg:gap-6 max-sm:px-2 max-sm:gap-4 ">
-          <p className="text-4xl font-bold">Start a project</p>
+        <div className="-translate-y-20 p-8 flex justify-between rounded-xl bg-sky-950 w-full items-center min-h-60 max-lg:flex-col max-lg:gap-6 max-sm:p-4 max-sm:gap-4 ">
+          <p className="text-4xl font-bold max-lg:text-center">
+            Start a project
+          </p>
           <div className="text-center text-xl  flex flex-col gap-1 ">
             <p>Interested in working together?</p>
             <p>We should queue up a time to chat. </p>

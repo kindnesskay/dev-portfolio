@@ -13,8 +13,12 @@ export default function HeroSection() {
               I build things for the web
             </p>
           </div>
-          <div className="mt-6  rounded-full overflow-hidden h-72 w-auto">
-            <img src="code.png" alt="code" className="h-full w-full" />
+          <div className="mt-6  rounded-full overflow-hidden h-72 w-auto ">
+            <img
+              src="code.png"
+              alt="code"
+              className="h-auto w-auto max-w-full max-h-full "
+            />
           </div>
         </div>
         <div className="mt-6 max-w-4xl w-full overflow-hidden">
