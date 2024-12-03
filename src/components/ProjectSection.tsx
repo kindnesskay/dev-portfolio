@@ -4,12 +4,14 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectSection() {
   return (
     <section className=" flex justify-center ">
-      <article className="px-8 pt-20 flex flex-col gap-4">
+      <article className="px-4 pt-20 flex flex-col gap-4">
         <p className="pb-4 font-semibold text-2xl">Personal projects</p>
-        <div className="grid grid-cols-3 gap-4 w-fit max-lg:grid-cols-2 max-sm:grid-cols-1">
-          {project_card_data.map((item, index) => (
-            <ProjectCard data={item} key={index} />
-          ))}
+        <div className="w-full flex justify-center">
+          <div className="grid grid-cols-3 gap-4 w-fit max-lg:grid-cols-2 max-sm:grid-cols-1 space-y-4 ">
+            {project_card_data.map((item, index) => (
+              <ProjectCard data={item} key={index} />
+            ))}
+          </div>
         </div>
         <p className="p-4 font-semibold text-2xl">Client work</p>
         <p>Able options</p>
@@ -32,7 +34,7 @@ export default function ProjectSection() {
           </div>
           <div className="max-lg:hidden relative h-full overflow-hidden">
             <img
-              src="mac.png"
+              src="laptop.png"
               alt=""
               className="w-auto h-auto  max-w-full z-[2] animate-scroll-box relative"
             />
