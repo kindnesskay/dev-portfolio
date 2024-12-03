@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  @apply font-mono;
+}
+.animate-scroll-box:hover ~ .animate-scroll {
+  @apply -translate-y-[67.5%] max-lg:-translate-y-[76%] transition-transform duration-1000 cursor-pointer;
+}
+
+.animate-scroll {
+  @apply transition-transform duration-1000 cursor-pointer;
+}
+article {
+  @apply max-w-5xl;
+}
+.menu {
+  @apply w-full max-w-sm h-screen absolute bg-white top-0 z-[5] transition-transform right-0;
+}
+.menu-open {
+  @apply translate-x-0 transition-transform;
+}
+.menu-closed {
+  @apply translate-x-full transition-transform;
+}
+.overlay {
+  @apply bg-black opacity-60 absolute h-screen w-screen left-0 top-0 z-[5];
+}
+.hero-bg {
+  background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
+}
+.red-border {
+  border: 1px solid red;
+}
+.dev-icon {
+  @apply h-12 w-12;
+}
+.dev-icon img {
+  @apply h-full w-full;
+}
+.animate-fill {
+  position: relative;
+  color: #4831d4;
+  z-index: 1;
+}
+
+.box {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #4831d4;
+  transform: translateX(-100%);
+  transition: all;
+  overflow: hidden;
+}
+.primary-color {
+  @apply bg-blue-800;
+}
+.secondary-color {
+  @apply bg-lime-400;
+}
+.text-primary-color {
+  @apply text-blue-800;
+}
+.text-secondary-color {
+  @apply text-lime-400;
+}
+.animate-fill:hover .box {
+  animation: animate-box 0.5s;
+  /* transform: translateX(0%); */
+  /* transition: all; */
+}
+.animate-fill:hover {
+  color: white;
+}
+@keyframes animate-box {
+  form {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.project-card-info {
+}
+.project-card:hover .project-card-info {
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+.project-card:hover .project-card-image {
+  transform: scale(150%);
+  transition: all 0.5s;
+  filter: blur(10px);
+}
+.project-card-info {
+  transition: all 0.5s;
+}
+.project-card-image {
+  transition: all 0.5s;
+}
