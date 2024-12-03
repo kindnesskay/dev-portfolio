@@ -11,7 +11,7 @@ export default function NavBar() {
       <div className={`${isOpen ? "overlay" : "hidden"}`}></div>
       <button className="text-5xl font-bold  z-[4]">Kay</button>
       <div className="h-12 w-12 z-[7]">
-        <button className="w-12 h-12 hidden max-smb:block" onClick={toggleMenu}>
+        <button className="w-12 h-12 hidden max-sm:block" onClick={toggleMenu}>
           {isOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +46,11 @@ export default function NavBar() {
         </button>
       </div>
 
-      <div className="flex gap-6 w-full justify-center">
+      <div className="flex gap-6 w-full justify-center max-sm:hidden">
         {menu_links.map((item) => (
           <button
             key={item.name}
-            className="text-xl font-semibold text-white hover:underline underline-offset-8"
+            className="text-xl font-semibold text-white hover:underline underline-offset-8 "
           >
             {item.name}
           </button>

@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <main className=" h-screen scroll-smooth snap-y snap-mandatory touch-none pt-24">
+      <main className=" h-screen scroll-smooth snap-y snap-mandatory overflow-y-scroll pt-24">
         <HeroSection />
         <AboutSection />
         <ProjectSection />
